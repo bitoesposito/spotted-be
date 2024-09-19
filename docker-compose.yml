@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  spottedbe:
+    image: spottedbe
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 5000:5000
+    environment:
+      - FB_API_KEY=${FB_API_KEY}
+      - IG_USER_ID=${IG_USER_ID}
+      - IG_USER_PASS=${IG_USER_PASS}
+      - GPT_KEY=${GPT_KEY}
+    env_file:
+      - .env

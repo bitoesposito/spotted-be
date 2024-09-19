@@ -1,0 +1,8 @@
+flask
+Pillow<=9.5.0
+facebook-sdk
+flask-cors
+instagrapi
+gunicorn>=20.1.0
+openai
+python-dotenv
